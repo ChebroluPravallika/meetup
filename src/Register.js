@@ -64,12 +64,15 @@ class Register extends Component {
           return (
             <Link to="/register" style={{textDecoration: 'none'}}>
               <div
-                style={{margin: '10px', display: 'flex', flexDirection: 'row'}}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
               >
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/meetup/website-logo-img.png"
                   alt="website logo"
-                  style={{height: '50px'}}
+                  style={{height: '90px', width: '170px', margin: '10px'}}
                 />
                 <div
                   style={{
@@ -77,13 +80,13 @@ class Register extends Component {
                     flexDirection: 'row',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    marginTop: '10%',
                   }}
                 >
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/meetup/website-register-img.png"
                     alt="website register"
-                    style={{height: '290px'}}
+                    className="image"
+                    style={{marginLeft: '20%'}}
                   />
 
                   <form
@@ -92,6 +95,7 @@ class Register extends Component {
                       flexDirection: 'column',
                       justifyContent: 'center',
                       color: 'black',
+                      marginRight: '10%',
                     }}
                   >
                     <h1> Let us Join</h1>

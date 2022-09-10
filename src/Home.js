@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import Context from './context'
+import './App.css'
 
 const Home = () => (
   <Context.Consumer>
@@ -29,6 +30,7 @@ const Home = () => (
                   justifyContent: 'center',
                   alignItems: 'center',
                   margin: '10px',
+                  textAlign: 'center',
                 }}
               >
                 <h1>Welcome to Meetup</h1>
@@ -51,7 +53,7 @@ const Home = () => (
               <img
                 src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
                 alt="meetup"
-                style={{height: '290px'}}
+                className="image"
               />
             </div>
           )}
@@ -71,7 +73,7 @@ const Home = () => (
               <img
                 src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
                 alt="meetup"
-                style={{height: '290px'}}
+                className="image"
               />
             </div>
           )}
